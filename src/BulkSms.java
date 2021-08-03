@@ -21,7 +21,7 @@ public class BulkSms {
 		message=URLEncoder.encode(message, "UTF-8");
 		String language="english";
 		
-		String route="p";
+		String route="v3";
 		
 		
 		String myUrl="https://www.fast2sms.com/dev/bulkV2?authorization="+apiKey+"&sender_id="+sendId+"&message="+message+"&language="+language+"&route="+route+"&numbers="+number;
@@ -72,6 +72,6 @@ public class BulkSms {
 		System.out.println("Program started.....");
 		
 		
-		BulkSms.sendSms("this message using java code ..."+ new Date().toLocaleString(), "6385101136");
+		BulkSms.sendSms("Greetings from Haris Info Tech  ..."+ new Date().toLocaleString(), "6385101136");
 	}
 }
